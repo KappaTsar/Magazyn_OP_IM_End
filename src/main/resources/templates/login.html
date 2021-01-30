@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Morshu's General Store</title>
+    <link rel="stylesheet" href="/commons.css">
+    <link rel="stylesheet" href="/login.css">
+</head>
+
+<body class="bg" >
+<div th:replace="fragments.html :: logo"></div>
+<form class="login-cover" id="login-form" method="post">
+    <input type="text" placeholder="Login" th:field="*{userModel.login}">
+    <input type="password" placeholder="Password" th:field="*{userModel.pass}">
+    <input type="submit" value="Sigh In">
+    <a href="/register" id="register-link">Create account</a>
+</form>
+</body>
+</html>

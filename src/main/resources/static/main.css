@@ -1,0 +1,35 @@
+.product-box {
+    width: 80%;
+    margin: 15px auto;
+    border: 2px solid black;
+}
+.name-box {
+    font-size: 30px;
+    padding: 10px;
+}
+.product-data-box {
+    font-size: 20px;
+    padding: 10px;
+}
+.product-data-box div {
+    display: inline-block;
+    margin-right: 50px;
+}
+.buy-button {
+    background-image: url("buy.png");
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: contain;
+    float: right;
+    margin-top: -20px;
+}
+.edit-button {
+    background-image: url("edit.png");
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: contain;
+    float: right;
+    margin-top: -20px;
+}
