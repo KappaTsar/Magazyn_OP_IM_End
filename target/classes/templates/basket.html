@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Morshu's General Store</title>
+    <link rel="stylesheet" href="/basket.css">
+    <link rel="stylesheet" href="/commons.css">
+</head>
+<body class="bg" >
+<div th:replace="fragments.html :: logo"></div>
+<div th:replace="fragments.html :: menu"></div>
+<div class="content-cover" id="content">
+
+    <div class="row header">
+        <div class="name">Name</div>
+        <div class="pieces">Quantity</div>
+        <div class="price">Unit Price</div>
+        <div class="total">Total Price</div>
+    </div>
+
+    <th:block th:each="product : ${products}">
+        <div class="row">
+            <div class="name" th:text="${product.name}"></div>
+            <div class="pieces" th:text="${product.quan}"></div>
+            <div class="price" th:text="${product.price} + ' Rubies'"></div>
+            <div class="total" th:text="${product.price * product.quan} + ' Rubies'"></div>
+        </div>
+    </th:block>
+
+    <div class="row header">
+        <div class="name"></div>
+        <div class="pieces"></div>
+        <div class="price sum">Summary:</div>
+        <div class="total sum" th:text="${sum} + ' Rubies'"></div>
+    </div>
+
+</div>
+</body>
+</html>

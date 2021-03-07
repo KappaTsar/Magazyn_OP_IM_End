@@ -1,0 +1,52 @@
+#logo {
+    width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu {
+    font-family: Verdana;
+    font-size: 16px;
+    text-align: center;
+    padding: 4px;
+    border: 0;
+    background-image: url("menu_panel.jpg");
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.bg {
+    background-image: url("bg_texture.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+
+.login-cover {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("menu_panel.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.content-cover {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("content-paper.jpg");
+    background-size: cover;
+}
+
+
+.menu-button {
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+    margin: 5px 25px;
+    transition: color 1s;
+}
+
+.menu-button:hover {
+    color: red;
+}

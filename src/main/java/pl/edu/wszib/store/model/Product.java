@@ -1,14 +1,10 @@
 package pl.edu.wszib.store.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
-@Entity(name = "Product")
-@Table(name = "tproduct")
+@Entity(name = "tproduct")
 public class Product {
 
     @Id
